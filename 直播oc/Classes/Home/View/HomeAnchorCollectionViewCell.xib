@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HomeAnchorCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="135" height="158"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="135" height="158"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9Nx-DC-iSn">
+                        <rect key="frame" x="0.0" y="0.0" width="135" height="158"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_icon_live" translatesAutoresizingMaskIntoConstraints="NO" id="5kh-Rc-NpF">
+                        <rect key="frame" x="107" y="5" width="23" height="13"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="南陵花神" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QGs-xg-fTo">
+                        <rect key="frame" x="8" y="135" width="50" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YFH-DD-b8v">
+                        <rect key="frame" x="68" y="136" width="27" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <state key="normal" title="134" image="home_icon_people"/>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="5kh-Rc-NpF" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="FLR-8u-c25"/>
+                <constraint firstItem="9Nx-DC-iSn" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="K7N-un-hyT"/>
+                <constraint firstAttribute="bottom" secondItem="QGs-xg-fTo" secondAttribute="bottom" constant="8" id="Sgd-Mr-v1i"/>
+                <constraint firstAttribute="bottom" secondItem="9Nx-DC-iSn" secondAttribute="bottom" id="aSD-fi-YZi"/>
+                <constraint firstAttribute="trailing" secondItem="9Nx-DC-iSn" secondAttribute="trailing" id="d2D-bA-fQ5"/>
+                <constraint firstItem="QGs-xg-fTo" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="ggT-29-ura"/>
+                <constraint firstItem="YFH-DD-b8v" firstAttribute="leading" secondItem="QGs-xg-fTo" secondAttribute="trailing" constant="10" id="o9m-fg-cf4"/>
+                <constraint firstItem="9Nx-DC-iSn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="pgh-W3-Ttt"/>
+                <constraint firstItem="YFH-DD-b8v" firstAttribute="centerY" secondItem="QGs-xg-fTo" secondAttribute="centerY" id="v7L-eO-LyE"/>
+                <constraint firstAttribute="trailing" secondItem="5kh-Rc-NpF" secondAttribute="trailing" constant="5" id="zop-De-16J"/>
+            </constraints>
+            <size key="customSize" width="135" height="158"/>
+            <connections>
+                <outlet property="anchorImageView" destination="9Nx-DC-iSn" id="OWj-Iw-4UK"/>
+            </connections>
+            <point key="canvasLocation" x="286.5" y="238"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="home_icon_live" width="23" height="13"/>
+        <image name="home_icon_people" width="7" height="7"/>
+    </resources>
+</document>
